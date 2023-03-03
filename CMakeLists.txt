@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.22.0)
+project(HomeWorkCPP2.11.5)
+add_library(FigureLibraryDynamic SHARED ./FigureLibraryDynamic/Figure.h ./FigureLibraryDynamic/Triangle.h ./FigureLibraryDynamic/Triangle.cpp ./FigureLibraryDynamic/TriangleRight.h ./FigureLibraryDynamic/TriangleRight.cpp ./FigureLibraryDynamic/Quadrilateral.h ./FigureLibraryDynamic/Quadrilateral.cpp ./FigureLibraryDynamic/Parallelogram.h ./FigureLibraryDynamic/Parallelogram.cpp ./FigureLibraryDynamic/Rectrangle.h ./FigureLibraryDynamic/Rectrangle.cpp ./FigureLibraryDynamic/Rhombus.h ./FigureLibraryDynamic/Rhombus.cpp ./FigureLibraryDynamic/Square.h ./FigureLibraryDynamic/Square.cpp ./FigureLibraryDynamic/TriangleEquil.h ./FigureLibraryDynamic/TriangleEquil.cpp ./FigureLibraryDynamic/TriangleIsos.h ./FigureLibraryDynamic/TriangleIsos.cpp)
+add_executable(HomeWorkCPP HomeWorkCPP2.11.5.cpp)
+target_link_libraries(HomeWorkCPP FigureLibraryDynamic)
