@@ -3,14 +3,6 @@
 #include <iostream>
 #include "Quadrilateral.h"
 
-#ifdef FigureLibraryDynamic_EXPORTS
-#define TFigureLibraryDynamic_API __declspec(dllexport)
-#else
-#define FigureLibraryDynamic_API __declspec(dllimport)
-#endif
-
-
-
 class Parallelogram :public Quadrilateral {
 public:
     FigureLibraryDynamic_API Parallelogram() :Parallelogram("ֿאנאככוכמדנאלל:", 20, 30, 30, 40) {}

@@ -3,12 +3,6 @@
 #include <iostream>
 #include "Triangle.h"
 
-#ifdef FigureLibraryDynamic_EXPORTS
-#define FigureLibraryDynamic_API __declspec(dllexport)
-#else
-#define TFigureLibraryDynamic_API __declspec(dllimport)
-#endif
-
 class Quadrilateral :public Triangle {
 public:
     void print_angle() override;

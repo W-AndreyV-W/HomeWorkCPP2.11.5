@@ -3,12 +3,6 @@
 #include <iostream>
 #include "Parallelogram.h"
 
-#ifdef FigureLibraryDynamic_EXPORTS
-#define FigureLibraryDynamic_API __declspec(dllexport)
-#else
-#define FigureLibraryDynamic_API __declspec(dllimport)
-#endif
-
 class Rhombus :public Parallelogram {
 public:
     FigureLibraryDynamic_API Rhombus() :Rhombus("Ромб:", 30, 30, 40) {}

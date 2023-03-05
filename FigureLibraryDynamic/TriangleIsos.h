@@ -3,12 +3,6 @@
 #include <iostream>
 #include "Triangle.h"
 
-#ifdef FigureLibraryDynamic_EXPORTS
-#define FigureLibraryDynamic_API __declspec(dllexport)
-#else
-#define FigureLibraryDynamic_API __declspec(dllimport)
-#endif
-
 class TriangleIsos :public Triangle {
 public:
     FigureLibraryDynamic_API TriangleIsos() :TriangleIsos("Равнобедренный треугольник:", 10, 20, 50, 60) {}

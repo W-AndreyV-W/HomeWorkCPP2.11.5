@@ -3,13 +3,6 @@
 #include <iostream>
 #include "Parallelogram.h"
 
-#ifdef FigureLibraryDynamic_EXPORTS
-#define FigureLibraryDynamic_API __declspec(dllexport)
-#else
-#define FigureLibraryDynamic_API __declspec(dllimport)
-#endif
-
-
 class Rectrangle :public Parallelogram {
 public:
     FigureLibraryDynamic_API Rectrangle() :Rectrangle("Прямоугольник:", 10, 20) {}

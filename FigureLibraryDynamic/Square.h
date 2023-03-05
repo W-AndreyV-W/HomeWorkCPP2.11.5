@@ -3,12 +3,6 @@
 #include <iostream>
 #include "Rectrangle.h"
 
-#ifdef FigureLibraryDynamic_EXPORTS
-#define FigureLibraryDynamic_API __declspec(dllexport)
-#else
-#define TFigureLibraryDynamic_API __declspec(dllimport)
-#endif
-
 class Square :public Rectrangle {
 public:
     FigureLibraryDynamic_API Square() :Square(" вадрат:", 20) {}
